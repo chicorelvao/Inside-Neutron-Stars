@@ -1,0 +1,54 @@
+Estágio 17 - Equação de Tolman-Oppenheimer-Volkoff
+
+
+
+1.Código do Primeiro Zip:
+
+
+1. Correr --eosbetat0b0.f
+
+Neste programa, existem três modelos para a equação de estado. Estes modelos estão escolhidos no terminal com os numeros 1,2 e 3.
+Nos fim deste programa são criados vários documentos chamados --fort.71 --fort.73 ... etc. Cada um destes files têm informações importantes a equação de estado.
+
+
+2. Correr --tovmbr.f 
+
+Este programa precisa de --tov.inp e --tov.dat como inputs para resolver as equações de TOV. O --tov.dat é o input que contem o três colunas com todos os dados necessários para calcular a TOV. Usualmente, o --tov.dat é na verdade o ficheiro --fort.71. O tov.inp é uma imput com três linhas de código. As duas primeira linhas correspondem ao valor minimo e máximo da segunda coluna de --fort.71. A última linha do tov.dat tem de ser três colunas com o número "-1" para o código parar.
+
+
+3. Gráficos com gnuplot
+
+Para fazer um gráfico:
+gnuplot> p 'diretorio do file' u 3:2 wl lc7 t'NL3'
+	p = plot 
+	u = ?
+	3:2 é as colunas do documento escolhido
+	wl = ? 
+	lc7 = cor da linha
+	t'NL3' = titulo do grafico, neste caso NL3
+
+
+Para guardar um gráfico:
+gnuplot> set term postscript
+gnuplot> set output "nome_ficheiro.ps"
+gnuplot> replot
+
+Para o terminal voltar a fazer gráficos:
+gnuplot> set term x11
+
+
+Temos de atingir um maximo no grafico. 
+
+
+
+
+2.Código do segundo Zip:
+
+1. Escolher um modelo --ddh-beta.f ou newt.f (e possivelmente outros.
+
+2. Fazer exatamente o mesmo que o ponto 1.2., no entanto, o tov.dat é agora o ficheiro fort.42.
+
+3. Para fazer o gráfico, é exatamente o mesmo que o ponto 1.3.
+
+
+

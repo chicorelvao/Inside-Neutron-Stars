@@ -1,0 +1,10 @@
+Ficheiro: EOSbetaT0B0.f
+Modelo: 2 - Nl3wr / 4
+Crosta: crust_bps_bbp.dat
+N. de Estrelas: 1000
+- Mmax  [Msun]  =   2.60851574;  E0 [fm^-4] =   2.81100011
+1.0 Eo: 0.126000E+01   Mg: 0.100136E+01
+1.2 Eo: 0.136200E+01   Mg: 0.120473E+01
+1.4 Eo: 0.146400E+01   Mg: 0.140250E+01
+1.6 Eo: 0.157500E+01   Mg: 0.160247E+01
+1.8 Eo: 0.170100E+01   Mg: 0.180354E+01 
